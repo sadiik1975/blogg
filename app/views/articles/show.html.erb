@@ -1,14 +1,15 @@
-<h1>Showing selected article</h1>
+<h1 align="left">Showing selected article</h1>
 
 <p>
-    Title: <%= @article.title %>
+   
+  <h3 align="left" >Title: <%= @article.title %></h3>
 </p>
 
-<p>
+ <p>
  
- Description: <%= @article.description %>  
+  <h3 align="left" >Description: <%= @article.description %></h3> 
 
 </p>
 
-<%= link_to "Edit this article", edit_article_path(@article) %> |
+<%= link_to "Edit this article", edit_article_path(@article) %>
 <%= link_to "Back to articles listing", articles_path %>
