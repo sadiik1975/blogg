@@ -5,7 +5,7 @@ class UsersController < ApplicationController
      
   
   def create
-    @User = User.new(user_params)
+    @user = User.new(user_params)
     if @user.save
       flash[:success] = "welcome to the black gods blogg #{@user.username}"
       redirect_to articles_path
